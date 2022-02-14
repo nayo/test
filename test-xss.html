@@ -1,2 +1,5 @@
 
-<script>alert(/XSS/);window.location="//google.com";</script>
+<script>
+  alert(/XSS/);
+  window.top.location.href="//google.com";
+</script>
