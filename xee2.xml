@@ -11,8 +11,7 @@
                  xmlns:gts="http://www.isotc211.org/2005/gts"
                  xmlns:gml="http://www.opengis.net/gml/3.2"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                 xsi:schemaLocation="http://www.isotc211.org/2005/gmi http://www.ngdc.noaa.gov/metadata/published/xsd/schema.xsd">
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema">
    <gmd:fileIdentifier>
       <gco:CharacterString>&xxe;</gco:CharacterString>
    </gmd:fileIdentifier>
