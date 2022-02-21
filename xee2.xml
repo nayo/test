@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/passwd" > ]>
-<gmi:MI_Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:gco="http://www.isotc211.org/2005/gco"
-                 xmlns:gmd="http://www.isotc211.org/2005/gmd"
-                 xmlns:gmi="http://www.isotc211.org/2005/gmi"
-                 xmlns:srv="http://www.isotc211.org/2005/srv"
-                 xmlns:gmx="http://www.isotc211.org/2005/gmx"
-                 xmlns:gsr="http://www.isotc211.org/2005/gsr"
-                 xmlns:gss="http://www.isotc211.org/2005/gss"
-                 xmlns:gts="http://www.isotc211.org/2005/gts"
-                 xmlns:gml="http://www.opengis.net/gml/3.2"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 xmlns:xs="http://www.w3.org/2001/XMLSchema">
-   <gmd:fileIdentifier>
-      <gco:CharacterString>&xxe;</gco:CharacterString>
-   </gmd:fileIdentifier>
-
-  
-</gmi:MI_Metadata>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" name="WMO catalogs">
+  <service name="myserv" />
+  <dataset name="GRIB2 Data">
+    <metadata inherited="true">
+      <serviceName>&xxe;</serviceName>
+    </metadata>
+    <dataset name="data1.wmo" urlPath="grib2/data1.wmo" />
+    <dataset name="data2.wmo" urlPath="grib2/data2.wmo" />
+    <dataset name="readme.txt" urlPath="grib2/readme.txt" />
+    <catalogRef xlink:title="test" xlink:href="test/catalog.xml" name="" />
+  </dataset>
+</catalog>
