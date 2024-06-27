@@ -1,4 +1,2 @@
-<?php 
-phpinfo();
-
-?>
+$data="<?php phpinfo(); ?>";
+eval("?>$data");
